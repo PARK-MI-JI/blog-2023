@@ -6,8 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>박미지 블로그</title>
 
-    <script src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
-    <link rel="stylesheet" href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
+    <!-- 제이쿼리 -->
+  <!-- js 쉽게 만들어 줌 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+  <!-- 테일윈드 -->
+  <!-- css 디자인 쉽게 만들어 줌 -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
+  <link rel="stylesheet" href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
     
     <!-- 신택스 하이라이터 플러그인 라이브러리 시작 -->
     <link rel="stylesheet" href="https://uicdn.toast.com/editor-plugin-code-syntax-highlight/latest/toastui-editor-plugin-code-syntax-highlight.min.css">
@@ -86,10 +94,34 @@ html > body .toastui-editor-contents pre {
 <div id="viewer-1"></div>
 
 <ul>
-  <li><a href="javascript:showPage(4)">4번글</a></li>
-  <li><a href="javascript:showPage(3)">3번글</a></li>
-  <li><a href="javascript:showPage(2)">2번글</a></li>
-  <li><a href="javascript:showPage(1)">1번글</a></li>
+  <li>
+    <a href="javascript:;" onclick="showPage(this);" class="block p-2 hover:text-red-500 flex gap-2">
+      <span class="data-id-4">4</span>
+      <span class="mr-auto underline">uml 예시</span>
+      <span>2023-03-07</span>
+    </a>  
+  </li>
+   <a href="javascript:;" onclick="showPage(this);" class="block p-2 hover:text-red-500 flex gap-2">
+      <span class="data-id-3">3</span>
+      <span class="mr-auto underline">>HTML 기초</span>
+      <span>2023-03-07</span>
+    </a> 
+  <li>
+  </li>
+  <li>
+    <a href="javascript:;" onclick="showPage(this);" class="block p-2 hover:text-red-500 flex gap-2">
+      <span class="data-id-2">2</span>
+      <span class="mr-auto underline">CSS 기초</span>
+      <span>2023-03-07</span>
+    </a> 
+  </li>
+  <li>
+    <a href="javascript:;" onclick="showPage(this);" class="block p-2 hover:text-red-500 flex gap-2">
+      <span class="data-id-1">1</span>
+      <span class="mr-auto underline">JAVA 기초</span>
+      <span>2023-03-07</span>
+    </a> 
+  </li>
 </ul>
 
 <script>
