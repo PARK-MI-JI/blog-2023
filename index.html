@@ -84,8 +84,8 @@ html > body .toastui-editor-contents pre {
     </template>
     <div id="viewer-1"></div>    
 
-    <script>
-        
+<script>
+
 
 function stripIndent(str) {
   const lines = str.split("\n");
@@ -138,7 +138,7 @@ function katexPlugin() {
 const viewer1TemplateEl = document.querySelector("#viewer-1-template");
 const viewer1MarkdownSource = stripIndent(viewer1TemplateEl.innerHTML); // 포함하고 있는 내용
 
-
+console.log("viewer1MarkdownSource : " + viewer1MarkdownSource);
 
 const viewer1 = Editor.factory({
   el: document.querySelector("#viewer-1"),
@@ -154,6 +154,6 @@ const viewer1 = Editor.factory({
   ]
 });
 
-    </script>
+</script>
 </body>
 </html>
